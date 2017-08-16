@@ -2,25 +2,18 @@ import React, {Component} from 'react';
 
 class QuestionsAndAnswers extends Component {
   render(){
+    const pairs = [['Where am I located?',
+                    'Seattle'],
+                    ['What do I work in?',
+                    'Rails for Back End and hopefully React for Front End!'],
+                    ['What is my favorite restaurant?',
+                    'What is my favorite restaurant?']]
     return(<div>
-      <div className='question'>
-        Where am I located?
-      </div>
-      <div className='answer'>
-        Seattle, WA
-      </div>
-      <div className='question'>
-        What do I work in?
-      </div>
-      <div className='answer'>
-        Rails for Back End and hopefully React for Front End!
-      </div>
-      <div className='question'>
-        What is my favorite restaurant?
-      </div>
-      <div className='answer'>
-        List
-      </div>
+      <ul>
+        {pairs.map((questionanswer) =>
+          return {questionAnswer}
+        )}
+      </ul>
     </div>)
   }
 }
