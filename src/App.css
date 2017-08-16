@@ -1,3 +1,33 @@
+.name {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.prof-description {
+  font-size: 1.3em;
+}
+
+.question {
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.answer {
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.main-header {
+  font-weight: bold;
+  font-size: 2.5em;
+  padding: 10px 10px;
+}
+
+.tagline {
+  padding: 20px 10px;
+}
+
 .App {
   text-align: center;
 }

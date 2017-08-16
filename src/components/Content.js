@@ -1,10 +1,23 @@
 import React, {Component} from 'react'
+import QuestionsAndAnswers from './QuestionsAndAnswers'
+import PersonalStatement from './PersonalStatement'
 
 class Content extends Component {
   render(){
     return(<div>
-      and I'm your main content
-      </div>)
+      <div className='main-header'>
+        Home
+      </div>
+      <div className='tagline'>
+        Here is another super interesting fact about myself!
+      </div>
+      <div>
+        <QuestionsAndAnswers/>
+      </div>
+      <div>
+        <PersonalStatement/>
+      </div>
+    </div>)
   }
 }
 
