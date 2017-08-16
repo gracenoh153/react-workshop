@@ -18,6 +18,13 @@
   padding-bottom: 20px;
 }
 
+.quote {
+  font-style: oblique;
+  padding: 20px;
+  margin: 30px;
+  border: 5px double #759bd8;
+}
+
 .main-header {
   font-weight: bold;
   font-size: 2.5em;
