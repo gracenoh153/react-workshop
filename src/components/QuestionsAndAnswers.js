@@ -2,25 +2,26 @@ import React, {Component} from 'react';
 
 class QuestionsAndAnswers extends Component {
   render(){
+    const questionsAndAnswers = [ {question: 'Where am I located?', 
+                                   answer: 'Seattle, WA'},
+                                  {question: 'What do I work in?',
+                                   answer: 'Rails for Back End and React for Front End!'},
+                                  {question: 'What is my favorite game?',
+                                   answer: 'Splinter Cell'}
+                                  ]
     return(<div>
-      <div className='question'>
-        Where am I located?
-      </div>
-      <div className='answer'>
-        Seattle, WA
-      </div>
-      <div className='question'>
-        What do I work in?
-      </div>
-      <div className='answer'>
-        Rails for Back End and hopefully React for Front End!
-      </div>
-      <div className='question'>
-        What is my favorite restaurant?
-      </div>
-      <div className='answer'>
-        List
-      </div>
+      {questionsAndAnswers.map(function({question, answer}){
+        return(
+        <div>
+          <div className="question">
+            {question}
+          </div>
+          <div className="answer">
+            {answer}
+          </div>
+        </div>
+        )
+      })}
     </div>)
   }
 }

@@ -5,7 +5,13 @@ import Quote from './Quote'
 
 class Content extends Component {
   render(){
-
+    const questionsAndAnswers = [ {question: 'Where am I located?', 
+                                   answer: 'Seattle, WA'},
+                                  {question: 'What do I work in?',
+                                   answer: 'Rails for Back End and React for Front End!'},
+                                  {question: 'What is my favorite game?',
+                                   answer: 'Splinter Cell'}
+                                  ]
     return(<div>
       <div className='main-header'>
         Home
@@ -14,7 +20,7 @@ class Content extends Component {
         Here is another super interesting fact about myself!
       </div>
       <div>
-        <QuestionsAndAnswers/>
+        <QuestionsAndAnswers items={questionsAndAnswers} />
       </div>
       <div>
         <PersonalStatement/>
