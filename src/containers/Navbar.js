@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import logo from '../logo.svg';
 import Home from '../components/Home.js'
+import About from '../components/About.js'
+import Contact from '../components/Contact.js'
 
 class Navbar extends Component {
   render(){
@@ -24,4 +26,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar
+export default Navbar;
